@@ -1,0 +1,36 @@
+/* Styling Body Text */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+/* Styling Header Footer */
+header,footer {
+    background-color: rgb(146, 15, 221);
+}
+/* Styling Home & Note Page Header */
+.site-title {
+    color:whitesmoke;
+}
+/* Styling Image */
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+/* Styling Hobbies List */
+aside ul {
+    list-style-type: square;
+}
+aside ul li:nth-child(odd) {
+    background-color:rgb(218, 218, 218);
+}
+/* Styling Navigation */
+nav ul{
+    list-style-type: none;
+    background-color: rgb(179, 179, 255);
+    border: 2px solid black;
+}
+a:link {
+    text-decoration: none;
+}
+nav li:hover,nav li:focus{
+    background: blueviolet;
+}
