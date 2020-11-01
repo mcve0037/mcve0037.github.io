@@ -18,7 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -45,3 +45,165 @@ table {
 /* ******************************************************* 
                       CUSTOM CSS
 ******************************************************* */
+
+body {
+    font-family: sans-serif;
+	background-color:#aad4cf;
+	font-size: 16px;
+}
+
+.container{
+	background-color: rgba(255, 255, 255, 0.5);;
+    max-width: 1024px;
+	margin: 0 auto;
+	margin-bottom:1rem;
+}
+
+.container2{
+	position: relative;
+}
+/*  		*/
+/* 	HEADER 	*/
+/*  		*/
+.header1{
+	position: absolute;
+	top: 58%;
+	right: 31.6%;
+}
+
+h1 {
+	color: white;
+	font-size: 4rem;
+}
+/* 				 */
+/* 	NAVIGATION 	*/
+/*  			*/
+nav ul li {
+    display: inline-block;
+	width: 33%;
+	padding:1%;
+    box-sizing: border-box;
+	border-right: 1px solid black;
+	
+}
+
+nav ul li a{
+	text-decoration:none;
+	padding-left: 35%;
+	color: black;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+nav ul li:last-child{
+    border: none;
+}
+/*  						*/
+/* MAIN PARAGRAPH AND IMAGE */
+/*  						*/
+h2{
+	color: black;
+	font-size: 2.25rem;
+	padding-left: 0.5rem;
+	padding-top: 1.2em;
+}
+
+.image{
+	float:left;
+	padding-top: 1em;
+	padding-left: 0.6em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+	height: 16em;
+}
+
+p{
+	padding-top: 1em;
+	padding-right: 1em;
+	font-size: 16px;
+	line-height: 1.45rem;
+	padding-left: 1em;
+}
+/*  		*/
+/* FACT LIST */
+/*  		*/
+.facts{
+	color: black;
+	font-size: 1.75rem;
+	padding-bottom: 0.5em;
+}
+
+article section ul li{
+	padding-left: 0.8em;
+	list-style: disc;
+	list-style-position: inside; 
+}
+/*  			*/
+/* CONTACT PAGE */
+/*  			*/
+main section h3{
+	color: black;
+	font-size: 1.75rem;
+	padding-left: 0.5rem;
+	padding-top: 1em;
+}
+
+main section .form{
+	border: 1px solid black;
+	margin: 0.5em;
+	padding: 1em;
+}
+
+main section div{
+	padding-top: 1em;
+	font-size: 1.1em;
+}
+
+main section .name input{
+	margin-top: 1em;
+	width: 100%;
+	padding: 0.5em 0em 0.5em 0em;
+	border:1px solid rgb(214, 214, 214);
+}
+
+main section .email input{
+	margin-top: 1em;
+	width: 100%;
+	padding: 0.5em 0em 0.5em 0em;
+	border:1px solid rgb(214, 214, 214);
+}
+
+main section .message input{
+	margin-top: 1.25em;
+	width: 100%;
+	padding-bottom: 4em;
+}
+
+main section .form .button{
+	margin-top: 1.5em;
+	background-color:rgba(255, 255, 255, 0);
+	border: 1px solid black;
+	padding: 1em;
+	font-size: 0.7rem;
+}
+
+main section .form h4{
+	font-size: 1.3rem;
+	padding-bottom: 1.25rem;
+}
+/*  		*/
+/*	FOOTER */
+/*  		*/
+.to-top{
+	color:black;
+	font-size: 1.5em;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+.footer{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-left: 85%;
+}
