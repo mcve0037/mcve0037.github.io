@@ -94,12 +94,6 @@ p{
     margin: .5em 0;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1em;
-}
-
 /* navigation */
 
 .site-header{
@@ -133,18 +127,14 @@ p{
 	width: 96%;
 	padding: 0.7em 0em 0.7em 0em;
     border:1px solid rgba(214, 214, 214, 0.5);
+    display: inline;
 }
 
 .search button .search-btn{
-    display: block;
-    float: right;
+    display: inline;
 }
 
 /* banner */
-
-.banner .container{
-    position: relative;
-}
 
 .banner .banner-text{
     background-color: rgba(0,0,0,0.7);
@@ -152,11 +142,6 @@ p{
     color: white;
     padding: 0 1em 0 1em;
     position: absolute;
-}
-
-.container .banner-img{
-    width: 100%;
-    margin: 0 auto;
 }
 
 .banner .btn{
@@ -175,7 +160,6 @@ p{
 
 }
 
-
 .btn:hover,.btn:focus{
     background-color:#c78c06;
     color: inherit;
@@ -183,15 +167,15 @@ p{
 
 /* about us */
 
-.about-image{
-    padding: 1em;
-    background: grey url("../images/about-us.jpg") no-repeat center bottom;
-    background-size: cover;
-}
-
 .about .container{
     background-color: #ffe6ac;
-   
 }
+
+.about-image{
+    padding: 1em;
+}
+
+.about-text
+
 
 
