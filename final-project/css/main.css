@@ -452,7 +452,6 @@ table tbody{
     }
 
     /* about us */
-
     .about{
         background-color: #ffe6ac;
     }
@@ -463,6 +462,9 @@ table tbody{
         height: auto;
     }
 
+    .about-text{
+        display: inline;
+    }
     
 
     /* .about-text{
@@ -511,6 +513,20 @@ table tbody{
 
     .container .print{
         grid-area: print;
+    }
+
+    /* vision */
+
+    
+
+    .vision{
+        color: white;
+        background: url("../images/vision.jpg") center;
+        background-size: cover;
+    }
+
+    .vision .vision-text{
+        background: none;
     }
 
     /* team */
