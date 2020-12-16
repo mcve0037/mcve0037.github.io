@@ -70,7 +70,7 @@ a:hover,a:focus{
 h1,h2,h3,h4,h5{
     font-weight: bold;
     /* top left-right bottom */
-    margin: 1em 0 0.5em;
+    /* margin: 1em 0 0.5em; */
 }
 
 /* Modular Scale https://www.modularscale.com/?1&rem&1.5 */
@@ -116,6 +116,10 @@ p{
     margin: 0 1em 0 1em;
 }
 
+.navigation li:nth-child(6){
+    margin-bottom: 10px;
+}
+
 .navigation a, .navigation a:link, .navigation a:visited{
     display: block;
     padding: 1em 0;
@@ -126,25 +130,37 @@ p{
     color: #222;
 }
 
-.search input{
-    margin-top: 1em;
-	padding: 0.7em 0em 0.7em 0em;
+* {
+    box-sizing: border-box;
+  }
+
+.search input[type=text]{
+    padding: 13px;
+    font-size: 17px;
     border:1px solid rgba(214, 214, 214, 0.5);
-    display: inline;
+    width: 89%;
+    float: left;
 }
 
 .search button{
-    background-color: #222; /* Green */
-    border: solid 1px #c78c06;
-    color: #c78c06;
+    margin-left: 1px;
+    float: left;
+    width: 10%;
     padding: 10px;
-    text-decoration: none;
-    display: inline-block;
+    background: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
 }
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 /* banner */
 
-.banner{
+.banner .container{
     position: relative;
 }
 
@@ -156,16 +172,14 @@ p{
     z-index: 0;
 }
 
-
 .banner .banner-text{
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.6);
     text-align: left;
     color: white;
     padding: 1em 1em 0 1em;
-    max-width: 1200px;
     z-index: 1;
     position: absolute;
-    top: 25%;
+    top: 15%;
 }
 
 .banner .btn{
@@ -194,14 +208,401 @@ p{
     background-color: #ffe6ac;
 }
 
-.about-image{
+.about-image img{
     padding: 1em;
+    max-width: 710px;
+    width: 100%;
+    height: auto;
 }
 
 .about-text{
     padding: 0em 1em 1em 1em;
 }
 
+/* our services */
 
+.services .container{
+    padding:1em;
+}
 
+.services .btn:hover,.btn:focus{
+    background-color:#c78c06;
+    color: inherit;
+}
 
+.services .btn{
+    font-size: 1.5rem;
+    text-decoration:none;
+    display: inline-block;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+}
+
+.content{
+    padding: 1em;
+    background-color: #ffe6ac;
+    margin-bottom: 1em;
+    max-width: 1200px;
+}
+
+.services img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* our vision */
+
+.vision .vision-text{
+    color: white;
+    background: white url("../images/vision.jpg") no-repeat center;
+    background-size: cover;
+    padding: 1em;
+}
+
+.vision .btn:hover,.btn:focus{
+    background-color:#c78c06;
+    color: inherit;
+}
+
+.vision .btn{
+    font-size: 1.5rem;
+    text-decoration:none;
+    display: inline-block;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+    border: solid 1px #c78c06;
+}
+
+/* our team */
+
+.team{
+    padding: 1em;
+}
+
+.team img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 1em;
+}
+
+.bob-text{
+    background-color: #ffe6ac;
+    padding: 1em;
+}
+
+.bob-text h4{
+    font-size: 1rem;
+}
+
+.john-text{
+    background-color: #ffe6ac;
+    padding: 1em;
+}
+
+.john-text h4{
+    font-size: 1rem;
+}
+
+.team hr{
+    border: 1px solid #c78c06;
+}
+
+/* contact page */
+
+.contact-title{
+    padding: 1em;
+}
+
+.contact-us{
+    padding: 1em;
+}
+
+.form .name input{
+	width: 100%;
+	padding: 0.5em 0em 0.5em 0em;
+	border:1px solid #222;
+}
+
+.form .email input{
+    width: 100%;
+	padding: 0.5em 0em 0.5em 0em;
+	border:1px solid #222;
+}
+
+.form .message input{
+	width: 100%;
+	padding-bottom: 6em;
+}
+
+.form label{
+    padding-top: 1em;
+}
+
+.form .button{
+    margin-top: 1em;
+    font-size: 2rem;
+    text-decoration:none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #222;
+    color: #c78c06;
+}
+
+/* hours of operation */
+
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+
+.operation-hours .container{
+    padding: 1em;
+}
+
+table th:nth-child(n),table td:nth-child(n){
+    border: 1px solid #000;
+    padding: 1em;
+}
+
+table th:nth-child(n){
+    background-color: #ffe6ac;
+}
+
+table tbody{
+    text-align: left;
+}
+
+/* location */
+
+.location .container{
+    padding: 1em;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+/* footer */
+
+.site-footer{
+    padding: 1em;
+    background-color: #222;
+    color: #c78c06;
+}
+
+/*                          */
+/*      DESKTOP STYLES      */
+/*                          */
+
+@media screen and (min-width: 760px) {
+    
+    /* navigation */
+
+    .nav ul{
+        display: flex;   
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .navigation li{
+        text-align: center;
+        color: #c78c06;
+    }
+
+    .navigation li:nth-child(6){
+        margin-bottom: 0px;
+    }
+
+    .navigation a, .navigation a:link, .navigation a:visited{
+        display: block;
+        padding: 1em 1.8em 1em 1.8em;
+        text-decoration: none;
+    }
+
+    .search input[type=text]{
+        padding: 13px;
+        font-size: 17px;
+        border:1px solid rgba(214, 214, 214, 0.5);
+        width: 84%;
+        float: left;
+    }
+
+    .search button{
+        margin-left: 1px;
+        float: left;
+        width: 15%;
+        padding: 10px;
+        background: #222;
+        color: #c78c06;
+        border: 1px solid #c78c06;
+    }
+
+    /* banner */
+
+    .banner .banner-text{
+        top: 25%;
+    }
+
+    /* about us */
+
+    .about{
+        background-color: #ffe6ac;
+    }
+
+    .about-image{
+        float: left;
+        width: 69%;
+        height: auto;
+    }
+
+    
+
+    /* .about-text{
+        float: left;
+    } */
+
+    /* services */
+
+    .services .btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    .services .container{
+        display: grid;
+        gap: 1em;
+        align-items: center;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "title title title title title title"
+        "digital digital digital marketing marketing marketing"
+        "video video web web print print"
+        ;
+    }
+
+    .container .service-title{
+        grid-area: title;
+    }
+
+    .container .digital-transformation{
+        grid-area: digital;
+    }
+
+    .container .marketing{
+        grid-area: marketing;
+    }
+
+    .container .video-production{
+        grid-area: video;
+    }
+
+    .container .web-development{
+        grid-area: web;
+    }
+
+    .container .print{
+        grid-area: print;
+    }
+
+    /* team */
+    .team .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "title title"
+        "j-image john"
+        "bob b-image"
+        ;
+    }
+
+    .team .container .team-title{
+        grid-area: title;
+    }
+
+    .team .container .john{
+        grid-area: j-image;
+    }
+
+    .team .container .john-text{
+        grid-area: john;
+    }
+    
+    .team .container .bob{
+        grid-area: b-image;
+    }
+
+    .team .container .bob-text{
+        grid-area: bob;
+    }
+
+    .team img{
+        padding-top: 0em;
+    }
+    /* contact us */
+
+    .contact-us{
+        padding: 0em;
+    }
+
+    .contact-area .container{
+        padding: 0em;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "contact contact"
+        "message location"
+        "hours hours"
+        ;
+    }
+
+    .contact-title{
+        grid-area: contact;
+        padding: 0em;
+    }
+
+    .contact-form{
+        grid-area: message;
+    }
+
+    .location{
+        grid-area: location;
+    }
+
+    .operation-hours{
+        grid-area: hours;
+    }
+
+    .map iframe{
+        min-width: 600px;
+    }
+
+    .contact-us input{
+        min-width: 600px;
+    }
+
+    .operation-hours table{
+        min-width: 1200px;
+    }
+    
+    .location .container{
+        padding: 0em;
+    }
+
+    .operation-hours .container{
+        padding: 0em;
+    }
+    
+
+}
