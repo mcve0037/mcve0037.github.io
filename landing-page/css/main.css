@@ -138,6 +138,10 @@ main{
     font-weight: bolder;
 }
 
+label .form-agree{
+    margin: 0.5rem;
+}
+
 /* designing the button to match mockup */
 .apply-button{
     color: #333131;
@@ -169,6 +173,13 @@ main{
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.socials{
+    display: flex;    
+    justify-content: space-evenly;
+    margin: 1rem;
 }
 
 /* creating a one column layout for the mobile */
