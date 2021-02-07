@@ -14,28 +14,25 @@
         <main>
             <header class="header">
                 <!-- adding img for the logo in the header -->
-                <img src="images/logo/logo.png" alt="logo">
+                <img class="header-logo" src="images/logo/logo.png" alt="logo">
             </header>
             <section class="section">
                 <div class="text">
                     <h1>Want to be your own boss?</h1>
                     <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
-                </div>
-                <div class="apply-form">
+                </div>   
+                <!-- creating a form for the application information of the site -->
+                <form class="apply-form">
                     <h3>Apply Now</h3>
                     <h4>Enter your info below.</h4>
-                    <!-- creating a form for the application information of the site -->
-                    <form class="apply-form">
-                        <input type="text" name="first-name" id placeholder="First Name">
-                        <input type="text" name="last-name" id placeholder="Last Name">
-                        <input type="text" name="email" id placeholder="Email Address">
-                        <input type="text" name="phone" id placeholder="Phone Number">
-                        <input type="checkbox" id="terms">
-                        <label for="terms">I agree to dash terms</label>
-                    </form>
+                    <input type="text" name="first-name" id placeholder="First Name">
+                    <input type="text" name="last-name" id placeholder="Last Name">
+                    <input type="text" name="email" id placeholder="Email Address">
+                    <input type="text" name="phone" id placeholder="Phone Number">
+                    <label><input type="checkbox" name="agree" class="form-agree">I agree to dash terms</label>
                     <button class="apply-button">DRIVE WITH US</button>
                     <p>Already applied? <a href="status">Check your application status here.</a></p>
-                </div>
+                </form>            
             </section>
             <footer class="footer">
                 <h4>See how much you can earn with Dash.</h4>
@@ -48,6 +45,12 @@
                     </div>
                     <button class="calculate-button">Calculate</button>
                 </form>
+                <div class="socials">
+                    <a href="/images/icons/facebook.svg"></a>
+                    <a href="/images/icons/instagram.svg"></a>
+                    <a href="/images/icons/linkedin.svg"></a>
+                    <a href="/images/icons/twitter.svg"></a>
+                </div>
             </footer>
         </main>
     </body>

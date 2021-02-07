@@ -1,0 +1,124 @@
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******************************************************* 
+                      CUSTOM CSS
+******************************************************* */
+
+
+/* Changing the default font to Montserrat */
+html{
+    font-family: 'Montserrat', sans-serif;
+    color: #333131;
+}
+
+/* Modular Scale https://www.modularscale.com/?1&rem&1.5 */
+h1{
+    font-size: 5.063rem;
+}
+h2{
+    font-size: 3.375rem;
+}
+h3{
+    font-size: 2.25rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+h5{
+    font-size: 1rem;
+}
+p{
+    margin: .5em 0;
+}
+
+.header{
+    display: grid;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 600px));
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 115px 1fr auto;
+    height: 100%;
+    justify-content: center;
+    padding: 0 1rem;
+    background-color: #f7f7ff;
+    background-image: url(/images/bg-image/scooter.svg);
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 50%;
+}
+
+/* designing the box for the apply now form, adding drop shadow to it */
+.apply-form{
+    padding: 1.5rem;
+    background: #f7f7ff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px 2px#333131 ;
+}
+
+footer{
+    background-color: #fffd8c;
+    margin: 0 -1rem;
+    padding: 1rem;
+}
