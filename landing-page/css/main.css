@@ -83,16 +83,23 @@ p{
 .header{
     display: grid;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1500px;
     margin: 0 auto;
+}
+
+.header-logo{
+    width: 100px;
+    height: auto;
+    display: block;
 }
 
 .section{
     display: grid;
     grid-template-columns: repeat(2, minmax(400px, 600px));
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     width: 100%;
+    min-height: 750px;
 }
 
 main{
@@ -111,14 +118,75 @@ main{
 
 /* designing the box for the apply now form, adding drop shadow to it */
 .apply-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
     padding: 1.5rem;
     background: #f7f7ff;
     border-radius: 15px;
     box-shadow: 4px 4px 8px 2px#333131 ;
 }
 
-footer{
-    background-color: #fffd8c;
-    margin: 0 -1rem;
-    padding: 1rem;
+.apply-form input{
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.05);
 }
+
+.apply-form h4,h3{
+    font-weight: bolder;
+}
+
+/* designing the button to match mockup */
+.apply-button{
+    color: #333131;
+    background: #57eeab;
+    font-weight: 600;
+    font-size: x-large;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.footer{
+    background-color: #fffd8c;
+    /* negative number on margin to allow the footer to stretch completely across the screen */
+    margin: 0 -1rem;
+    padding: 2rem 1rem;
+}
+
+/* designing footer button to match mockup */
+.footer button{
+    font-weight: 600;
+    font-size: x-large;
+    color: #f7f7ff;
+    background: #ff8480;
+    text-transform: uppercase;
+    width: 25%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* creating a one column layout for the mobile */
+@media (max-width: 1023px){
+     .section{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        justify-items: center;
+        align-content: space-between;
+        min-height: 1000px;
+    }
+}
+
+/* allowing the content within .section to stay centered at 1500px wide */
+@media (min-width: 1023px){
+    .section{
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+   
