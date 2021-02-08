@@ -112,7 +112,7 @@ main{
     padding: 0 1rem;
     background-color: #f7f7ff;
     /* setting background image of website | **not showing on pushed github version, but is on liveserver?** */
-    background-image: url(/images/bg-image/scooter.svg);
+    background-image: url(../images/bg-image/scooter.svg);
     background-repeat: no-repeat;
     /* adjusting background image size */
     background-position: center 40%;
