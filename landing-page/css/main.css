@@ -235,6 +235,9 @@ label .form-agree{
         max-width: 1500px;
         margin: 0 auto;
     }
+}
+
+@media (min-width: 679px){
     .calculate-form button{
         width: 25%;
     }
