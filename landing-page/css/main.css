@@ -164,6 +164,7 @@ label .form-agree{
     /* negative number on margin to allow the footer to stretch completely across the screen */
     margin: 0 -1rem;
     padding: 2rem 1rem;
+    justify-content: center;
 }
 
 /* designing footer button to match mockup */
@@ -185,7 +186,6 @@ label .form-agree{
     flex-grow: 1;
     width: 100%;
     max-width: 500px;
-    color: #333131;
 }
 
 .social{
@@ -202,7 +202,6 @@ label .form-agree{
 .calculate-form{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     flex-grow: 1;
 }
 
@@ -212,7 +211,7 @@ label .form-agree{
         flex-direction: column;
     }
     .calculate-form input{
-        width: 45%
+        width: 40%
     }
 }
 
@@ -235,5 +234,8 @@ label .form-agree{
     .section{
         max-width: 1500px;
         margin: 0 auto;
+    }
+    .calculate-form button{
+        width: 25%;
     }
 }
