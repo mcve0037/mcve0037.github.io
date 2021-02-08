@@ -184,8 +184,8 @@ label .form-agree{
 .socials{
     display: flex;
     flex-grow: 1;
+    justify-content: flex-end;
     width: 100%;
-    max-width: 500px;
     font-size: 35px;
 }
 
