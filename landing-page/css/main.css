@@ -114,8 +114,6 @@ main{
     background-repeat: no-repeat;
     background-position: center 40%;
     background-size: 50%;
-    -o-background-size: 50% 50%;
-    -webkit-background-size: 50% 50%;
 }
 
 /* designing the box for the apply now form, adding drop shadow to it */
