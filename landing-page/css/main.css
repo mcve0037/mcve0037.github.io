@@ -139,6 +139,7 @@ main{
 
 .apply-form h4,h3{
     font-weight: bolder;
+    padding: 0.25rem;
 }
 
 label .form-agree{
