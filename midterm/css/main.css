@@ -1,0 +1,290 @@
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******************************************************* 
+                      CUSTOM CSS
+******************************************************* */
+
+/* Changing the default font to Montserrat */
+html{
+    font-family: 'Raleway', sans-serif;
+    color: #3c3b3a;
+}
+
+body{
+    line-height: 1.5;
+}
+  
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+  
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+  
+img {
+    width: 100%;
+}
+  
+a,
+a:link,
+a:visited {
+    color: inherit;
+}
+  
+a:hover,
+a:focus {
+    color: #00ADD8;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    /* top left-right bottom */
+    margin: 1em 0 0.5em;
+}
+  
+/* Modular Scale https://www.modularscale.com/?1&rem&1.5 */
+h1 {
+    font-size: 5.063rem;
+}
+  
+h2 {
+    font-size: 3.375rem;
+}
+  
+h3 {
+    font-size: 2.25rem;
+}
+  
+h4 {
+    font-size: 1.5rem;
+}
+  
+h5 {
+    font-size: 1rem;
+}
+  
+p {
+    margin: 1em 0;
+}
+  
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: #3c3b3a;
+    width: 100%;
+}
+
+/* matching navigation to mockup, using flex to easily change from vertical to horizontal */
+.navigation{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.navigation li{
+    text-align: center;
+    color: #f2f2f2;
+    margin: 0 1em 0 1em;
+    max-width: 88.04px;
+}
+
+.navigation li:nth-child(1){
+    text-align: left;
+    margin: 0 1em 0 1em;
+}
+
+.navigation li:nth-child(6){
+    margin-bottom: 10px;
+}
+
+.navigation a, .navigation a:link, .navigation a:visited{
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+.navigation a:hover, .navigation a:focus, .navigation a.current{
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.banner-text{
+    margin: 1rem;
+}
+
+/* creating grid system for the facility activity list */
+header .banner ul{
+    display: grid;
+    gap: 1em;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+}
+
+.banner li{
+    display: grid;
+    color: #26a682;
+    text-align: center;
+}
+
+.banner li i{
+    color: #3c3b3a;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* designing the apply button to match mockup*/
+.apply-button{
+    display: block;
+    color: #f2f2f2;
+    background: #26a682;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 0.25rem 3rem 0.25rem 3rem;
+    margin: 1.5rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 10px 10px 1px#3c3b3a ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.subtitle{
+    color: #26a682;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+p{
+    margin: 1rem;
+}
+
+/* designing the learn button to match mockup*/
+.learn-button{
+    color: #f2f2f2;
+    background: #26a682;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.25rem 2rem 0.25rem 2rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 8px 10px 1px#3c3b3a;
+    float: right;
+    margin: 1rem;
+}
+
+section.quote .container{
+    margin-top: 7rem;
+    padding: 1rem;
+    background-color: #3c3b3a;
+}
+
+.quote p,h3,h4{
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 2rem;
+    margin: 1rem;
+}
+
+.quote img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 175px;
+    height: auto;
+    border-radius: 50%;
+    border: solid 5px #f2f2f2;
+}
+
+footer{
+    margin-top: 7.5rem;
+    margin: 0 -9999;
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+}
+
+footer p{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 4rem;
+    padding-bottom: 4rem;
+}
