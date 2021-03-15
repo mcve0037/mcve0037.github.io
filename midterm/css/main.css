@@ -394,6 +394,7 @@ section.quote .container{
     margin: 1rem;
 }
 
+/* designing the image to match the mockup */
 .quote img{
     display: block;
     margin-left: auto;
@@ -423,6 +424,7 @@ section.quote .container{
     height: auto;
 }
 
+/* designing application form to match mockup */
 .apply-form{
     display: flex;
     flex-direction: column;
@@ -442,6 +444,7 @@ section.quote .container{
     background-color: rgba(255, 255, 255, 1);
 }
 
+/* designing application form button to match mockup */
 .apply-button{
     display: block;
     color: #f2f2f2;
@@ -471,7 +474,8 @@ form p{
 .location-text{
     margin: 1rem;
 }
-
+ 
+/* width of map at 100% along with negative margin so its connected to the footer cleanly */
 .map iframe{
     width: 100%;
     margin-bottom: -8rem;
@@ -500,6 +504,8 @@ footer ul{
 }
 
 @media (min-width: 768px){
+
+    /* changing navigation to row instead of column */
     .navigation{
         display: flex;
         flex-direction: row;
@@ -555,15 +561,7 @@ footer ul{
 
 @media (min-width: 1500px){
 
-    /* .banner{
-        display: grid;
-    grid-template-columns: repeat(2, minmax(400px, 600px));
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    min-height: 750px;
-    } */
-
+    /* using grid to rearrange order of layout */
     .about-text{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
