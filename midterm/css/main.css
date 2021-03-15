@@ -61,6 +61,7 @@ html{
 
 body{
     line-height: 1.5;
+    margin: 0;
 }
   
 *,
@@ -76,10 +77,34 @@ body{
     clear: both;
 }
   
-img {
+img{
     width: 100%;
+    height: 200px; 
+}
+
+.discover-college img {
+    
+    object-fit: cover;
+}
+
+.entertainment-banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
   
+.services img{
+    display: none;
+}
+
+.fitness-text img{
+    display: none;
+}
+
+.climbing-text img{
+    display: none;
+}
+
 a,
 a:link,
 a:visited {
@@ -133,33 +158,22 @@ p {
 
 nav{
     background-color: #3c3b3a;
-    width: 100%;
 }
 
 /* matching navigation to mockup, using flex to easily change from vertical to horizontal */
 .navigation{
-    padding: 1em;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-
 .navigation li{
     text-align: center;
     color: #f2f2f2;
-    margin: 0 1em 0 1em;
+    margin: 0 1rem 0 1rem;
     max-width: 88.04px;
-}
-
-.navigation li:nth-child(1){
-    text-align: left;
-    margin: 0 1em 0 1em;
-}
-
-.navigation li:nth-child(6){
-    margin-bottom: 10px;
 }
 
 .navigation a, .navigation a:link, .navigation a:visited{
@@ -174,6 +188,10 @@ nav{
 
 .banner-text{
     margin: 1rem;
+    text-align: center;
+}
+
+.banner-text p{
     text-align: center;
 }
 
@@ -213,6 +231,49 @@ header .banner ul{
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Creating hover animation for interactable buttons */
+.start-button:hover {
+    animation: hover 0.7s infinite ease-in-out;
+    transform: scale(0.6);
+    transition: 0.3s;
+}
+
+.learn-button:hover {
+    animation: hover 0.7s infinite ease-in-out;
+    transform: scale(0.6);
+    transition: 0.3s;
+}
+
+@keyframes hover {
+    0%, 100%{
+      transform: scale(1); 
+    }
+    50%{
+      transform: scale(1.05);
+    }
+}
+
+/* Creating fade-in animation for main headers of website */
+.banner-text h1{
+    animation: fade-in 0.7s linear;
+}
+
+@keyframes fade-in {
+    0%{
+        transform: scale(.5);
+        opacity: 0%;
+    }
+    50%{
+        transform: scale(0.75);
+        opacity: 45%;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+
 
 .about-banner{
     color: #f2f2f2;
@@ -268,11 +329,12 @@ header .banner ul{
 .subscribe{
     color: #f2f2f2;
     padding: 1rem;
-    text-align: center;
     font-size: 1.5rem;
     background-color: #3c3b3a;
-    margin: 0 -9999;
-    margin-top: -1rem;
+}
+
+.subscribe p{
+    text-align: center;
 }
 
 .subscribe-button{
@@ -302,6 +364,7 @@ header .banner ul{
 
 p{
     margin: 1rem;
+    text-align: left;
 }
 
 /* designing the learn button to match mockup*/
@@ -321,7 +384,7 @@ p{
 section.quote .container{
     margin-top: 7rem;
     padding: 1rem;
-    background-color: #3c3b3a;
+    background-color: #3c3b3a; 
 }
 
 .quote p,h3,h4{
@@ -341,6 +404,8 @@ section.quote .container{
     border-radius: 50%;
     border: solid 5px #f2f2f2;
 }
+
+
 
 .thanks h2{
     text-align: center;
@@ -414,13 +479,12 @@ form p{
 
 footer{
     margin-top: 7.5rem;
-    margin: 0 -9999;
     background-color: #3c3b3a;
     color: #f2f2f2;
 }
 
 footer p{
-    font-size: 3rem;
+    font-size: 1.75rem;
     font-weight: 500;
     text-align: center;
     padding-top: 4rem;
@@ -431,6 +495,130 @@ footer ul{
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-    font-size: 4rem;
+    font-size: 1.75rem;
     padding-bottom: 4rem;
+}
+
+@media (min-width: 768px){
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        height: 75px;
+        width: fit-content;
+    }
+
+    header .banner ul{
+        align-items: center;
+        grid-template-columns: repeat(4, 4fr);
+    }
+    
+    .banner-img{
+        overflow: hidden;
+        height: 200px;
+    }
+
+    .quote .container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "photo paragraph"
+        "text paragraph";
+        align-items: center;
+    }
+
+    .dijanelle{
+        grid-area: photo;
+    }
+
+    .dijanelle-text{
+        grid-area: text;
+    }
+
+    .quote p{
+        grid-area: paragraph;
+    }
+
+    .quote 
+
+    .subscribe .container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+    }
+
+    .services img{
+        display: contents;
+    }
+}
+
+@media (min-width: 1500px){
+
+    /* .banner{
+        display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 600px));
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 750px;
+    } */
+
+    .about-text{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10rem;
+    }
+
+    .quote .container{
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas: 
+        "photo text paragraph";
+        align-items: center;
+    }
+
+    .dijanelle{
+        grid-area: photo;
+    }
+
+    .dijanelle-text{
+        grid-area: text;
+    }
+
+    .quote p{
+        grid-area: paragraph;
+    }
+
+    .discover-college{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        background-color: #f2f2f2;
+        margin-bottom: -7.5rem;
+        align-content: center;
+    }
+
+    .discover-college img{
+        width: 90%;
+        height: auto;
+        margin: 5rem;
+    }
+
+    .discover-entertainment{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        margin-bottom: -7.5rem;
+        align-content: center;
+    }
+
+    .entertainment-banner img{
+        width: 90%;
+        height: auto;
+        margin: 5rem;
+    }
+
+    .banner-text{
+        justify-content: center;
+    }
 }
