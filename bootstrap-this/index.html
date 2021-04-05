@@ -11,7 +11,125 @@
     <title>Mathieu McVeety - Bootstrap This!</title>
   </head>
   <body>
-    
+
+    <div class="navigation">
+      <!-- Using bootstrap navigation to create the website's nav bar, including a dropdown menu for mobile -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <img  class="mx-auto" src="images/logo.png" alt="logo" width="75" height="75">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="m-auto">
+                <ul class="navbar-nav">
+                  <li class="nav-item mr-lg-5">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item dropdown ml-lg-5">
+                    <a class="nav-link" href="#components">Components</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="banner">
+      <div class="container">
+        <!-- Creating a two column grid to create the main banner of the website -->
+        <div class="row p-5">
+          <div class="col-lg-6 col-md-12 site-title pt-5 text-sm-center">
+            <h3 class="title-text text-uppercase">mtm6201</h3>
+            <h1 class="title-text text-uppercase">Bootstrap This!</h1>
+          </div>
+          <div class="col-lg-6 col-md-12 banner-image pt-5 text-sm-center">
+            <img src="images/banner.jpg" alt="banner" class="img-fluid">
+            <a href="http://www.freepik.com">Designed by vectorjuice / Freepik</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Using the bootstrap rows and columns to create another grid for the about information -->
+    <div id="about" class="about">
+      <div class="container">
+        <div class="row p-5">
+          <div class="col-lg-12 text-center">
+            <h2>About Bootstrap</h2>
+          </div>
+      </div>
+          <div class="row p-5">
+            <div class="col-lg-6 p-2">
+              <h3>Release</h3>
+              <p>Bootstrap was originally released on August 19, 2011. Since then, there's been five major releases. Currently, the fifth major release, Bootstrap 5, is in beta. The beta includes new features and changes. There are no exact release dates for this version of Bootstrap as of yet.</p>
+            </div>
+            <div class="col-lg-6 p-2">
+              <h3>History</h3>
+              <p>Boostrap was created by a designer and a developer at Twitter. They created this toolkit in mid-2010. It used to be known as a "Twitter Blueprint". The current team at Bootstrap is still looking for new members to join their small team that currently maintains Bootstrap.</p>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-lg-4 p-2">
+              <h3>Open Source</h3>
+              <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+            </div>
+            <div class="col-lg-4 p-2">
+              <h3>Mobile First</h3>
+              <p>Bootstrap includes a powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+            </div>
+            <div class="col-lg-4 p-2">
+              <h3>Components Library</h3>
+              <p>Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Using the same bootstrap rows and columns to create the last grid system for the components -->
+    <div id="components" class="components">
+      <div class="container">
+        <div class="row p-5 mr-auto">
+          <div class="col-lg-12 p-2 text-center">
+            <h2>Components</h2>
+            <p>Bootstrap comes with nearly two dozen components that are ready to use right out of the box.</p>
+          </div>
+        </div>
+        <div class="row p-5">
+          <div class="col-lg-4 p-2">
+            <h3>Alerts</h3>
+            <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+          </div>
+          <div class="col-lg-4 p-2">
+            <h3>Breadcrumbs</h3>
+            <p>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
+          </div>
+          <div class="col-lg-4 p-2">
+            <h3>List group</h3>
+            <p>List groups are a flexible and powerful component for displaying a series of content.</p>
+          </div>
+        </div>
+        <div class="row p-5">
+          <div class="col-lg-4 p-2">
+            <h3>Buttons</h3>
+            <p>Create custom button styles to fit your different needs, such as: forms, dialogs, actions, and more with support for multiple sizes, states, and more.</p>
+            <button type="button" class="btn btn-primary">Test Button</button>
+          </div>
+          <div class="col-lg-4 p-2">
+            <h3>Progress</h3>
+            <p>Progress can be used to create custom progress bars with supoprt for stacked bars, animated background, and text labels. They are built with HTML elemnts, some CSS to set width, and a few other variables. </p>
+          </div>
+          <div class="col-lg-4 p-2">
+            <h3>Spinners</h3>
+            <p>Spinners can be used to show loading states of different components or pages. They are built entirely with HTML and CSS, not needing any JavaScript</p>
+          </div>  
+        </div>
+      </div>
+    </div>
 
 
 
