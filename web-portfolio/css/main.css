@@ -1,0 +1,207 @@
+
+body .main-page{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* //////////////////////
+       MAIN PAGE
+////////////////////// */
+
+.navigation .navbar .navbar-logo{
+    padding: 0 2rem 0 5rem;
+}
+
+.navigation .navbar{
+    padding: 5rem 20rem;
+}
+
+.navigation .navbar .nav-item .nav-link{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 4.5rem;
+    color: white;
+}
+
+.main-page footer .container{
+    padding: 1rem;
+    background-color: #7A28CB;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    height: 4rem; 
+    text-align: right;
+    margin: 17% -1rem 0 -1rem;
+}
+
+.title-text{
+    margin-top: 5rem;
+    text-transform: uppercase;
+    color: white;
+    border-left: 3px #A06CD5 solid;
+    padding-left: 6px;
+}
+
+.title-text h1{
+    line-height: 2.5rem;
+    font-size: 3rem;
+}
+
+.title-text h3{
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+}
+
+.site-banner button{
+    float: right;
+    margin-top: 6.5rem;
+    border: none;
+    background: #A06CD5;
+    color: #f2f2f2;
+    padding: 0 3rem 0rem 3rem;
+    border-radius: 15px;
+}
+
+.site-banner button:hover{
+    background: #7A28CB;
+}
+
+
+/* //////////////////////
+       ABOUT PAGE
+////////////////////// */
+
+.about-page .navigation .navbar .nav-item .nav-link{
+    color: black;
+}
+
+
+.about-page .container img{
+    border-radius: 100%;
+}
+
+.about-page main .text{
+    margin-top: 4.5rem;
+}
+
+.about-page footer .container{
+    padding: 1rem;
+    background-color: #7A28CB;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    height: 4rem; 
+    text-align: right;
+    margin: 10% -1rem 0 -1rem;
+}
+
+/* //////////////////////
+      PORTFOLIO PAGE
+////////////////////// */
+
+.portfolio-page .navigation .navbar .nav-item .nav-link{
+    color: black;
+}
+
+main h1{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.portfolio-page img{
+    margin: 1rem 0rem;
+}
+
+.portfolio-page h3{
+    font-family: Calibri,sans-serif;
+    padding: 2rem 0;
+}
+
+.portfolio-page footer{
+    padding: 1rem;
+    background-color: #7A28CB;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    height: 4rem; 
+    text-align: right;
+    margin: 5% -1rem 0 -1rem;
+}
+
+/* //////////////////////
+      CONTACT PAGE
+////////////////////// */
+
+.contact-page .navigation .navbar .nav-item .nav-link{
+    color: black;
+}
+
+.contact-form h3{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* designing application form to match mockup */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    margin-bottom: 4rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.contact-form input{
+    padding: 0.5rem 0;
+    margin: 0.25rem 0;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.contact-form input .message{
+    padding: 2rem;
+}  
+
+/* designing application form button to match mockup */
+.contact-button{
+    display: block;
+    background: #A06CD5;
+    padding: 0rem 3rem 0rem 3rem;
+    border: none;
+    border-radius: 25px;
+    margin-right: auto;
+    width: 10%;
+}
+
+.contact-button:hover{
+    background: #7A28CB;
+}
+
+form button p{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+form p{
+    margin: 0;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.contact-page footer .container{
+    padding: 1rem;
+    background-color: #7A28CB;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    height: 4rem; 
+    text-align: right;
+    margin: 7% -1rem 0 -1rem;
+}
