@@ -55,6 +55,8 @@ body .main-page{
     color: white;
 }
 
+
+/* issue with footer not found - doesnt stretch the full width */
 .main-page footer .container{
     padding: 1rem;
     background-color: #7A28CB;
@@ -134,6 +136,8 @@ button p{
     font-family: Arial, sans-serif;
 }
 
+
+/* issue with footer not found  - doesnt stretch the full width*/
 .about-page footer .container{
     padding: 1rem;
     background-color: #7A28CB;
@@ -170,6 +174,8 @@ main h1{
     padding: 2rem 0;
 }
 
+
+/* issue with footer not found  - doesnt stretch the full width*/
 .portfolio-page footer{
     padding: 1rem;
     background-color: #7A28CB;
@@ -246,6 +252,8 @@ form p{
     color: black;
 }
 
+
+/* issue with footer not found  - doesnt stretch the full width*/
 .contact-page footer .container{
     padding: 1rem;
     background-color: #7A28CB;
